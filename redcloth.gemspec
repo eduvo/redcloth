@@ -27,15 +27,15 @@ Gem::Specification.new do |s|
   s.files -= Dir['lib/**/*.so']
 
   s.platform = 'ruby'
-  
+
   s.files += %w[attributes inline scan].map {|f| "ext/redcloth_scan/redcloth_#{f}.c"}
   s.files += ["ext/redcloth_scan/redcloth.h"]
   s.extensions = Dir['ext/**/extconf.rb']
 
   s.add_development_dependency('bundler', '> 1.3.4')
-  s.add_development_dependency('rake', '~> 10.0.3')
-  s.add_development_dependency('rspec', '~> 2.4')
-  s.add_development_dependency('diff-lcs', '~> 1.1.2')
+  s.add_development_dependency('rake', '~> 13')
+  s.add_development_dependency('rspec', '~> 3.12')
+  s.add_development_dependency('diff-lcs', '~> 1.5')
 
   s.license = "MIT"
 end
