@@ -4,7 +4,7 @@ $LOAD_PATH.unshift File.join(redcloth_dir, 'lib')
 require "redcloth/version"
 
 Gem::Specification.new do |s|
-  s.name        = "RedCloth"
+  s.name        = RedCloth::GEM_NAME
   s.version     = RedCloth::VERSION.to_s
   s.authors     = ["Jason Garber", "Joshua Siler", "Ola Bini"]
   s.description = "Textile parser for Ruby."

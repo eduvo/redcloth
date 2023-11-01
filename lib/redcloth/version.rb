@@ -2,25 +2,25 @@ module RedCloth
   module VERSION
     MAJOR = 4
     MINOR = 3
-    TINY  = 2
+    TINY  = 3
 #    RELEASE_CANDIDATE = 0
 
     STRING = [MAJOR, MINOR, TINY].compact.join('.')
     TAG = "REL_#{[MAJOR, MINOR, TINY].compact.join('_')}".upcase.gsub(/\.|-/, '_')
     FULL_VERSION = "#{[MAJOR, MINOR, TINY].compact.join('.')}"
-    
+
     class << self
       def to_s
         STRING
       end
-      
+
       def ==(arg)
         STRING == arg
       end
     end
   end
-  
-  NAME = "RedCloth"
+
+  NAME = "eduvo-RedCloth"
   GEM_NAME = NAME
   URL  = "http://redcloth.org/"
   description = "Textile parser for Ruby."
